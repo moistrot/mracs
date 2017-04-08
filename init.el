@@ -10,11 +10,7 @@
 (require 'init-ui)
 (require 'init-keybinding)
 (require 'init-org)
-(require 'my-defalut)
-
-
-
-;; orgmode 下源码高亮
+(require 'init-my-default)
 
 ;; custom-group-setting
 (setq custom-file (expand-file-name "custel/custom.el" user-emacs-directory))

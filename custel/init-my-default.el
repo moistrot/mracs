@@ -9,10 +9,10 @@
 	;;				    ("xxlf" "liufei")
 		;;			    ))
 
-					; 全屏
+;全屏
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 (global-hl-line-mode 1)
 (global-linum-mode 1)
 
-(fset 'yes-or-no-p 'y-or-n-p)  
-(provide 'my-defalut)
+(fset 'yes-or-no-p 'y-or-n-p)
+(provide 'init-my-default)
