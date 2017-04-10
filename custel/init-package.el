@@ -12,16 +12,19 @@
                 swiper
                 counsel
                 smartparens
+		window-numbering
 		;; theme
                 dracula-theme
 		;; evil
 		evil
 		evil-leader
-		;; 
+		;;
 		which-key
 		popwin
 
 		;; go -lang
+                go-autocomplete
+                exec-path-from-shell
 		;; require shell: go get -u github.com/nsf/gocode
 		;; ocode set propose-builtins true
                 ) "Default packages")
@@ -53,6 +56,8 @@
 ;; ESC to switch back normal-state
 (define-key evil-insert-state-map [escape] 'evil-normal-state)
 
+
+(window-numbering-mode 1)
 (which-key-mode 1)
 ;; (require 'smartparens-config)
 
