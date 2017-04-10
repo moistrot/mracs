@@ -4,3 +4,5 @@ elpa/
 ems.org
 recentf
 abbrev_defs
+.cache/
+.github/
