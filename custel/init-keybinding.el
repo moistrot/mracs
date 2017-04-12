@@ -16,6 +16,8 @@
 (global-set-key (kbd "<f1> l") 'counsel-find-library)
 
 
+;; expand-region
+(global-set-key (kbd "C-=") 'er/expand-region)
 ;; delete back word
 (global-set-key (kbd "C-w") 'backward-kill-word)
 ;; (window-numbering-mode 1)

@@ -13,6 +13,10 @@
                 counsel
                 smartparens
 		window-numbering
+		;; require ag
+		;; helm
+		helm-ag
+		expand-region
 		;; theme
                 dracula-theme
 		;; evil
@@ -96,5 +100,10 @@
 ;; auto-complete
 (require 'auto-complete)
 (global-auto-complete-mode t)
+
+;; helm ag
+(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+;; expand-region
+(require 'expand-region)
 
 (provide 'init-package)
