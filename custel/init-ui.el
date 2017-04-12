@@ -19,6 +19,9 @@
 (require 'airline-themes)
 (load-theme 'airline-light t)
 
-(set-face-attribute 'default nil :height 160)
+(if (equal system-type 'darwin)
+    (progn
+      (set-face-attribute 'default nil :height 160)
+      ))
 
 (provide 'init-ui)
