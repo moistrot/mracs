@@ -28,7 +28,7 @@
 		;; json
 		json-reformat
 		json-mode
-
+		undo-tree
 		;; go -lang
                 go-autocomplete
                 exec-path-from-shell
@@ -65,7 +65,7 @@
 
 
 (window-numbering-mode 1)
-(which-key-mode 1)
+;;(which-key-mode 1)
 ;; (require 'smartparens-config)
 
 ;; ivy mode
