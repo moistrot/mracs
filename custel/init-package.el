@@ -25,6 +25,9 @@
 		;;
 		which-key
 		popwin
+		;; json
+		json-reformat
+		json-mode
 
 		;; go -lang
                 go-autocomplete
@@ -101,9 +104,8 @@
 (require 'auto-complete)
 (global-auto-complete-mode t)
 
-;; helm ag
-(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 ;; expand-region
 (require 'expand-region)
+(require 'json-mode)
 
 (provide 'init-package)

@@ -31,12 +31,15 @@
   "3"  'select-window-3
   "w/" 'split-window-right
   "w-" 'split-window-below
-  ":"  'counsel-M-x
+;;  ":"  'counsel-M-x
   "wM" 'delete-other-windows
   )
 
 ;; ac complete
 (define-key ac-complete-mode-map "\C-n" 'ac-next)
 (define-key ac-complete-mode-map "\C-p" 'ac-previous)
+
+;; helm ag
+(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 
 (provide 'init-keybinding)
