@@ -9,6 +9,8 @@
                 ;;company
 		;;ac-complete
                 ;; --- Better Editor ---
+		avy
+		ace-pinyin
                 swiper
                 counsel
                 smartparens
@@ -24,6 +26,7 @@
 		evil
 		evil-leader
 		;;
+		yasnippet
 		which-key
 		popwin
 		;; json
@@ -112,8 +115,10 @@
 ;; expand-region
 (require 'expand-region)
 (require 'json-mode)
+(require 'ace-pinyin)
+(ace-pinyin-global-mode +1)
 
-(require 'chinese-fonts-setup)
+;;(require 'chinese-fonts-setup)
 ;; 让 chinese-fonts-setup 随着 emacs 自动生效。
 ;; (chinese-fonts-setup-enable)
 ;; 让 spacemacs mode-line 中的 Unicode 图标正确显示。

@@ -44,4 +44,8 @@
 ;; helm ag
 (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
 
+(global-set-key (kbd "C-;") 'avy-goto-char)
+(global-set-key (kbd "C-:") 'avy-goto-char-2)
+(global-set-key (kbd "M-g w") 'avy-goto-word-1)
+
 (provide 'init-keybinding)

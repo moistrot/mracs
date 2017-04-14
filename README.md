@@ -21,3 +21,13 @@ go get -u github.com/nsf/gocode
 
 ## exec-path-from-shell
 emacs copy 环境变量
+
+## yasnippet
+代码模板
+
+## avy
+C-; char1 快速跳转
+C-: char2 快速跳转2
+
+## ace-pinyin
+加强的avy，可根据拼音跳转到相应的行
