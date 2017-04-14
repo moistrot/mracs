@@ -4,8 +4,8 @@
 (require 'cl)
 
 ;; Add Packages
- (defvar mracs-packages '(
-                ;; --- Auto-completion ---
+(defvar mracs-packages '(
+		;; --- Auto-completion ---
                 ;;company
 		;;ac-complete
                 ;; --- Better Editor ---
@@ -103,6 +103,8 @@
 
 ;; helm ag
 (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
+(global-set-key (kbd "C-c p p") 'helm-ag)
+
 ;; expand-region
 (require 'expand-region)
 

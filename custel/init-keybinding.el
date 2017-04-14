@@ -21,6 +21,8 @@
 ;; delete back word
 (global-set-key (kbd "C-w") 'backward-kill-word)
 ;; (window-numbering-mode 1)
+;; json format
+(global-set-key (kbd "C-c C-f") 'json-reformat-region)
 
 (evil-leader/set-key
   "ff" 'find-file
