@@ -6,3 +6,7 @@ recentf
 abbrev_defs
 .cache/
 .github/
+.projectile
+.travis-build.sh
+.travis.yml
+
