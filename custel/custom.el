@@ -10,6 +10,7 @@
    (quote
     ("962dacd99e5a99801ca7257f25be7be0cebc333ad07be97efd6ff59755e6148f" default)))
  '(evil-leader/leader "SPC")
+ '(json-reformat:indent-width 2)
  '(which-key-idle-delay 0.4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
