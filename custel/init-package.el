@@ -33,6 +33,7 @@
 		json-reformat
 		json-mode
 		undo-tree
+		;;
 		;; go -lang
                 go-autocomplete
                 exec-path-from-shell

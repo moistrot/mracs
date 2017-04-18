@@ -1,4 +1,5 @@
 (global-set-key (kbd "<f2>") 'open-my-init-file)
+(global-set-key (kbd "<f4>") 'open-my-workinfo-file)
 
 (with-eval-after-load 'company
   (define-key company-active-map (kbd "M-n") nil)
@@ -47,5 +48,28 @@
 (global-set-key (kbd "C-;") 'avy-goto-char)
 (global-set-key (kbd "C-:") 'avy-goto-char-2)
 (global-set-key (kbd "M-g w") 'avy-goto-word-1)
+
+;; insert date
+(global-set-key (kbd "C-c d") 'insert-date)
+(defun insert-date (prefix)
+    "Insert the current date. With prefix-argument, use ISO format. With
+   two prefix arguments, write out the day and month name."
+    (interactive "P")
+    (let ((format (cond
+                   ((not prefix) "** %Y-%m-%d")
+                   ((equal prefix '(4)) "[%Y-%m-%d]"))))
+      (insert (format-time-string format))))
+
+(global-set-key (kbd "C-c t") 'insert-time-date)
+(defun insert-time-date (prefix)
+    "Insert the current date. With prefix-argument, use ISO format. With
+   two prefix arguments, write out the day and month name."
+    (interactive "P")
+    (let ((format (cond
+                   ((not prefix) "[%H:%M:%S; %d.%m.%Y]")
+                   ((equal prefix '(4)) "[%H:%M:%S; %Y-%m-%d]"))))
+      (insert (format-time-string format))))
+
+(global-set-key (kbd "C-c v") 'org-show-todo-tree)
 
 (provide 'init-keybinding)

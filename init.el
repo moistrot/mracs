@@ -4,6 +4,10 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
+(defun open-my-workinfo-file()
+  (interactive)
+  (find-file "~/Dropbox/work_note/work.org"))
+
 (add-to-list 'load-path "~/.emacs.d/custel/")
 
 (require 'init-package)
