@@ -12,7 +12,12 @@
  '(evil-leader/leader "SPC")
  '(json-reformat:indent-width 2)
  '(which-key-idle-delay 0.4))
-(custom-set-faces
+ '(setq-default indent-tabs-mode nil)
+
+  (setq-default indent-tabs-mode nil)
+  (setq-default tab-width 4)
+  (setq indent-line-function 'insert-tab)
+  (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
